@@ -110,6 +110,7 @@ function calcularAreaTriangulo(){
 
 
     const area = areaTriangulo(base, lado1);
+    alert(area);
 }
 
 function calcularPerimetroCirculo(){
