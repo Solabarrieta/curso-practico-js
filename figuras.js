@@ -92,3 +92,19 @@ function calcularAreaCuadrado(){
     const area = areaCuadrado(value);
     alert(area);
 }
+
+function calcularPerimetroCirculo(){
+    let input = document.getElementById("InputCirculo")
+    let radio = parseInt(input.value);
+
+    const perimetro = perimetroCirculo(radio);
+    alert(perimetro);
+}
+
+function calcularAreaCirculo(){
+    let radio = parseInt(document.getElementById("InputCirculo").value);
+
+    const area = areaCirculo(radio);
+
+    alert(area);
+}
