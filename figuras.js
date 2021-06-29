@@ -40,7 +40,7 @@ function perimetroTriangulo(lado1,lado2,base){
  */
 
 function alturaTriangulo(base,lado1){
-    return Math.sqrt((base/2)**2+lado1**2);
+    return Math.sqrt(lado1**2-(base/2)**2);
 }
 
 
@@ -98,19 +98,27 @@ function calcularPerimetroTriangulo(){
     let lado1 = parseInt(document.getElementById("InputTriangulo").value);
     let lado2 = parseInt(document.getElementById("InputLado2").value);
     let base = parseInt(document.getElementById("InputTrianguloBase").value);
-
-    const perimetro = perimetroTriangulo(lado1, lado2, base);
-
-    alert(perimetro);
+    if(esIsosceles(lado1,lado2,base)){
+        const perimetro = perimetroTriangulo(lado1, lado2, base);
+        alert(perimetro);
+    }else{
+        alert("Los valores de los lados del triangulo que has introducido, no coinciden con un trianuglo isosceles. Para esto, los lados tienen que ser iguales y la base diferente!");
+    }
 }
 
 function calcularAreaTriangulo(){
+
     const lado1 = parseInt(document.getElementById("InputTriangulo").value);
+    const lado2 = parseInt(document.getElementById("InputLado2").value);
     const base = parseInt(document.getElementById("InputTrianguloBase").value);
 
+    if(esIsosceles(lado1,lado2,base)){
+        const area = areaTriangulo(base, lado1);
+        alert(area);
+    }else{
+        alert("Los valores de los lados del triangulo que has introducido, no coinciden con un trianuglo isosceles. Para esto, los lados tienen que ser iguales y la base diferente!");
+    }
 
-    const area = areaTriangulo(base, lado1);
-    alert(area);
 }
 
 function calcularPerimetroCirculo(){
@@ -127,4 +135,12 @@ function calcularAreaCirculo(){
     const area = areaCirculo(radio);
 
     alert(area);
+}
+
+function esIsosceles(lado1, lado2, base){
+    if(lado1 == lado2 && lado1 != base){
+        return true;
+    }else{
+        return false;
+    }
 }
