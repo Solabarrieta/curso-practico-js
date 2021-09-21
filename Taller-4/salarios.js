@@ -1,0 +1,23 @@
+const brawlStars = [];
+
+brawlStars.push({name: "Bo", salary: 1980});
+brawlStars.push({name:"Bea", salary:2450});
+brawlStars.push({name:"Dynamike", salary: 1465});
+brawlStars.push({name:"Byron", salary: 3435});
+brawlStars.push({name:"Genio", salary: 3220});
+brawlStars.push({name:"Nita", salary: 1705});
+brawlStars.push({name:"Rosa", salary: 1400});
+brawlStars.push({name:"Colt", salary: 2010});
+brawlStars.push({name:"Gale", salary: 5500});
+brawlStars.push({name:"Tara", salary: 1803});
+brawlStars.push({name:"Jess", salary: 2100});
+brawlStars.push({name:"Spike", salary: 4900});
+brawlStars.push({name:"Amber", salary: 5000});
+brawlStars.push({name:"Leon", salary: 5200});
+brawlStars.push({name:"Crow", salary: 4900});
+brawlStars.push({name:"Sandy", salary: 5400});
+brawlStars.push({name:"Squeak", salary: 3550});
+brawlStars.push({name:"Primo", salary: 2000});
+brawlStars.push({name:"Shelly", salary: 1990});
+brawlStars.push({name:"Rico", salary: 2000});
+brawlStars.push({name:"Brock", salary: 1800});
